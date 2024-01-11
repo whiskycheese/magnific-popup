@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magnific Popup</title>
+  <link rel="stylesheet" href="magnific-popup.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Magnific Popupを使ってみよう</h1>
+  </header>
+
+  <section class="section">
+    <h2 class="section__title">画像単体の表示</h2>
+    <a class="section__popup popup-single" href="./img/kitten1.jpg"><img src="./img/gallery-thumbnail/kitten1.jpg" width="200" height="200" alt="画像1"></a>
+  </section>
+
+  <section class="section">
+    <h2 class="section__title">画像複数の表示（ギャラリー）</h2>
+    <div class="section__popup popup-gallery">
+      <a class="popup" href="./img/kitten1.jpg"><img src="./img/gallery-thumbnail/kitten1.jpg" width="200" height="200" alt="画像1"></a>
+      <a class="popup" href="./img/kitten2.jpg"><img src="./img/gallery-thumbnail/kitten2.jpg" width="200" height="200" alt="画像2"></a>
+      <a class="popup" href="./img/kitten3.jpg"><img src="./img/gallery-thumbnail/kitten3.jpg" width="200" height="200" alt="画像3"></a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section__title">画像とテキストの表示</h2>
+    <!-- ボタン -->
+    <a class="section__btn popup-text" href="#inline-wrap">インライン情報を表示</a>
+    <div id="inline-wrap" class="mfp-hide">
+      <h3 class="inline-wrap__title">画像とテキストを表示</h3>
+      <div class="inline-wrap__image"><img src="./img/kitten4.jpg"></div>
+      <p class="inline-wrap__text">キャプションを付けたい時なんかに便利です。</p>
+      <p class="inline-wrap__close section__btn"><a href="#">閉じる</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section__title">動画の表示</h2>
+    <a class="section__btn popup-iframe" href="https://youtu.be/DHfRfU3XUEo?si=vr5O_atoJjD-YzZp">YouTube動画</a>
+  </section>
+
+  <section class="section">
+    <h2 class="section__title">Webページの表示</h2>
+    <a class="section__btn popup-iframe" href="https://dimsemenov.com/plugins/magnific-popup/documentation.html#including-files">Webページ</a>
+  </section>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="jquery.magnific-popup.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

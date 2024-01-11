@@ -1,0 +1,93 @@
+@charset 'utf-8';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background: #F0ECE5;
+  font-size: 1.6rem;
+  min-height: 200vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.header {
+  height: 7.6rem;
+  background: #31304D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 3.2rem;
+  text-align: center;
+  color: #F0ECE5;
+}
+
+.section {
+  padding: 3rem 0;
+  border-top: 1px solid #161A30;
+  text-align: center;
+}
+
+.section__title {
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
+
+.section__btn {
+  display: block;
+  width: 20rem;
+  padding: 1.5rem 1rem;
+  border-radius: 1.6rem;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  background: #31304D;
+  color: #fff;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+
+#inline-wrap {
+  text-align: center;
+  position: relative;
+  margin: 10px auto;
+  max-width: 700px;
+  background: #fff;
+  padding: 20px;
+}
+
+.inline-wrap__title {
+  font-size: 2rem;
+}
+
+.inline-wrap__image {
+  margin-top: 2rem;
+}
+
+.inline-wrap__text {
+  margin-top: 1rem;
+}
+
+.inline-wrap__close.section__btn {
+  margin-top: 2rem;
+}
